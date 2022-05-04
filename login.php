@@ -1,6 +1,6 @@
 <?php
 
-use LDAP\Result;
+
 
 include('conexao.php');
 
@@ -13,7 +13,7 @@ $username = mysqli_real_escape_string($conexao, $_POST['username']);
 $password = mysqli_real_escape_string($conexao, $_POST['password']);
 
 
-$query = "select usuario from usuario where usuario = '{$username}' and senha=md5('{$password}')";
+$query = "select usuario from users where usuario = '{$username}' and senha=md5('{$password}')";
 
 $result = mysqli_query($conexao, $query);
 

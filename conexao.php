@@ -11,15 +11,6 @@
 
     $conexao = new mysqli($dbhost, $dbUser, $dbPass, $dbName);
     
-
-
-    if($conexao){
-        echo 'conectado ao banco de dados';
-    }
-    else{
-        echo 'Falha na conexão';
-    }
-
 ?>
 
 

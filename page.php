@@ -24,11 +24,15 @@ $con = $conexao->query($consulta);
         <tr class="colunas">
             <td>Nome</td>
             <td>Email</td>
+            <td>CPF</td>
+            <td>Telefone</td>
         </tr>
         <?php while($dado = $con->fetch_array()) { ?> 
         <tr> 
           <td><?php echo $dado['usuario']; ?></td>
           <td><?php echo $dado['email']; ?></td> 
+          <td><?php echo $dado['CPF']; ?></td> 
+          <td><?php echo $dado['telefone']; ?></td> 
         </tr>
         <?php } ?>       
     </table>

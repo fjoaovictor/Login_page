@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
     <title>Sign in and Sign up form</title>
 </head>
 
@@ -23,14 +30,12 @@
                         <i class="fas fa-user"></i>
                         <input type="text" placeholder="Username" name="username" />
                     </div>
+                    
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
                         <input type="password" placeholder="Password" name="password" />
                     </div>
-                    <div class="login-error">
-                        <i class="fas fa-exclamation-circle" id="icon-alert login-error"></i>
-                        <p id="login-error">Incorrect password. Try again</p>
-                    </div>
+                    
                     <input type="submit" class="btn solid" value="Login" />
                     <p class="social-text">Or sign In with social platforms </p>
                     <div class="social-media">
@@ -58,6 +63,14 @@
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
                         <input type="email" placeholder="Email" name="email-cad"/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-address-card"></i>
+                        <input id="cpf" type="text" placeholder="CPF" name="cpf-cad" autocomplete="off" maxlength="14" >
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-phone-alt"></i>
+                        <input id="tel" type="tel" placeholder="Telefone" name="tel-cad" autocomplete="on" maxlength="15" >
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
